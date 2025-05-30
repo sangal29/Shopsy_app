@@ -1,117 +1,79 @@
-# 🛒 ShoppyGlobe – React E-commerce Application
 
-ShoppyGlobe is a basic yet fully functional e-commerce web application built with **React**. It showcases a shopping experience with product listings, product details, cart management, and a smooth UI using modern React tools like **Redux**, **React Router**, and **custom hooks**.
+🛍️ ShoppyGlobe – A Modern React E-commerce App
+ShoppyGlobe is a responsive and interactive e-commerce web application built using React. It offers a seamless shopping experience with product listings, detailed views, cart management, and modern UI/UX practices. Built with Redux Toolkit, React Router, and custom hooks, it demonstrates key frontend development skills.
 
----
+🌐 Live Demo: symphonious-panda-a61d23.netlify.app
+📦 GitHub Repo: github.com/sangal29/Shopsy_app
 
-## 🚀 Features
+✨ Key Features
+🔄 Product Fetching – Loads products dynamically from an external API
 
-- 📦 Fetch and display products from external API
-- 🔍 Product detail view with routing
-- 🛒 Add and remove items from the cart using Redux
-- 🧭 Navigation using React Router
-- 🔄 Modify product quantities in the cart
-- 🔎 Product search functionality
-- ❌ 404 Not Found route handling
-- 🧩 Lazy loading with React.lazy & Suspense
-- 📱 Responsive design with custom CSS
+🔍 Detailed View – View individual product details using dynamic routing
 
----
+🛒 Cart System – Add, remove, and update item quantities using Redux Toolkit
 
-## 🧱 Component Structure
+🧭 Routing – Navigate smoothly with React Router
 
-- **App** – Main component managing routes
-- **Header** – Navigation bar with shopping cart icon
-- **ProductList** – Fetches and displays a list of products
-- **ProductItem** – Single product with "Add to Cart" button
-- **ProductDetail** – Detailed view of a product using URL parameters
-- **Cart** – View all items in the cart with quantity controls
-- **CartItem** – Represents individual items in the cart
-- **NotFound** – 404 page for invalid routes
+🔎 Search Products – Find products using real-time search
 
----
+⛔ 404 Handling – Clean "Not Found" page for unmatched routes
 
-## 🧠 State Management
+🚀 Lazy Loading – Optimized performance using React.lazy & Suspense
 
-- **Redux Toolkit** is used to manage global state, particularly the cart.
-- Actions and reducers handle adding/removing items and updating quantities.
-- Custom selectors for accessing state efficiently.
+📱 Mobile-Friendly – Fully responsive UI using custom CSS
 
----
+🧠 Tech Stack & Tools
+Tech	Purpose
+React	Frontend UI Framework
+Vite	Lightning-fast build tool
+Redux Toolkit	Global state management
+React Router DOM	Client-side routing
+JavaScript (ES6+)	Programming Language
+CSS	Styling (Responsive Design)
+React.lazy & Suspense	Code-splitting and lazy loading
 
-## 🌐 Routing
+🧩 Component Architecture
+bash
+Copy
+Edit
+src/
+├── components/
+│   ├── Header.jsx            # Navigation bar with cart
+│   ├── ProductList.jsx       # Lists all products
+│   ├── ProductItem.jsx       # Single product card
+│   ├── ProductDetail.jsx     # Product description view
+│   ├── Cart.jsx              # Full cart view
+│   ├── CartItem.jsx          # Cart item with controls
+│   └── NotFound.jsx          # 404 page
+├── redux/
+│   ├── store.js              # Redux store setup
+│   └── cartSlice.js          # Cart slice with actions/reducers
+├── hooks/
+│   └── useFetchProducts.js   # Custom hook for API calls
+├── App.jsx
+├── main.jsx
+└── index.css
+🛠️ How to Run Locally
+🔧 Prerequisites
+Node.js ≥ 14.x
 
-Implemented using **React Router**:
+Git
 
-- `/` – Home (Product list)
-- `/product/:id` – Product details
-- `/cart` – Shopping cart
-- `/checkout` – Checkout page
-- `*` – NotFound
-
----
-
-## 🧰 Tech Stack
-
-- React + Vite
-- Redux Toolkit
-- React Router DOM
-- JavaScript (ES6+)
-- CSS (Responsive Design)
-- React.lazy & Suspense
-
----
-
-## 🔧 Installation & Running Locally
-
-### Prerequisites
-
-- [Node.js](https://nodejs.org/)
-- [Git](https://git-scm.com/)
-
-### Steps
-
-```bash
+🚀 Installation
+bash
+Copy
+Edit
 git clone https://github.com/sangal29/Shopsy_app.git
 cd Shopsy_app
 npm install
 npm run dev
-```
+Visit 👉 http://localhost:5173 in your browser.
 
-Then open [http://localhost:5173](http://localhost:5173) in your browser.
+🌐 Routing Overview
+Route	Purpose
+/	Home – displays all products
+/product/:id	Detailed product view
+/cart	Cart with added items
+/checkout	Checkout page (future scope)
+*	NotFound route (404)
 
----
-
-## 📂 Project Structure
-
-```
-src/
-├── components/
-│   ├── Header.jsx
-│   ├── ProductList.jsx
-│   ├── ProductItem.jsx
-│   ├── ProductDetail.jsx
-│   ├── Cart.jsx
-│   ├── CartItem.jsx
-│   └── NotFound.jsx
-├── redux/
-│   ├── store.js
-│   └── cartSlice.js
-├── hooks/
-│   └── useFetchProducts.js
-├── App.jsx
-├── main.jsx
-└── index.css
-```
-
----
-
-## 📎 Submission
-
-🔗 GitHub Repository: [https://github.com/sangal29/Shopsy_app](https://github.com/sangal29/Shopsy_app)
-
----
-
-## 📧 Contact
-
-📩 **rishabhsangal29@gmail.com**
