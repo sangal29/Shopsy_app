@@ -1,6 +1,5 @@
 
 
-
 🛍️ ShoppyGlobe – A Modern React E-commerce App
 ShoppyGlobe is a responsive and interactive e-commerce web application built using React. It offers a seamless shopping experience with product listings, detailed views, cart management, and modern UI/UX practices. Built with Redux Toolkit, React Router, and custom hooks, it demonstrates key frontend development skills.
 
